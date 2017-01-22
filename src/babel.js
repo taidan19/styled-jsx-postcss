@@ -101,7 +101,7 @@ export default function ({types: t}) {
             .catch(resolved)
           loopWhile(() => wait)
 
-          if (css instanceof Error) {
+          if (css instanceof Error || css.name === 'CssSyntaxError') {
             throw css
           }
 
