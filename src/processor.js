@@ -12,6 +12,11 @@ export default async (src, options = {}) => {
   if (!processor) {
     processor = postcss(plugins)
   }
-  const result = await processor.process(src)
+  const result = await processor.process(src, {
+    map: {
+      inline: false,
+      annotation: false
+    }
+  })
   return result.css
 }
