@@ -49,7 +49,7 @@
     "postcss": "^5.2.8",
     "postcss-load-plugins": "^2.2.0",
     "styled-jsx": "^0.5.7",
-    "deasync": "^0.1.9"
+    "deasync": "0.1.12"
   },
   "ava": {
     "require": [
